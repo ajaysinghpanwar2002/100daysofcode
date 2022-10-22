@@ -9,3 +9,8 @@ use of linked list
 
 representation of linked list 
 
+struct Node
+{
+    int value;
+    Node* next; 
+}
