@@ -1,0 +1,11 @@
+use of linked list 
+
+1) implementation of stack and queues
+2) Image Gallery
+3) Music Player 
+4) Browser
+5) hash Map and Hash Set
+
+
+representation of linked list 
+

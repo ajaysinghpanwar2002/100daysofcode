@@ -1,3 +1,3 @@
 # 100DaysOfReact
 # 100DaysOfProblemSolving
-# Trees
+# 100DaysOfDataStructuresAlgorithms
