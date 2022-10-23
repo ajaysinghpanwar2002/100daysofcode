@@ -1,0 +1,5 @@
+
+3 steps 
+1) run the outer for loop the no of lines
+2) identify for every row numebr how many columns are there, types of elements
+3) what you want to print 
