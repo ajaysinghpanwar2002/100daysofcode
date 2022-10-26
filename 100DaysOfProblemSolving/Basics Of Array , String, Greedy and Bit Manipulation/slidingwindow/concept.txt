@@ -1,0 +1,12 @@
+agar question mein 
+
+arr/string + subarray/subString + largest/maximum/minimum +  k = window size
+
+2 type ke sliding window hote h 
+
+1) fixed size 
+In fixed size they'll ask find max/min for a particular window size . 
+
+2) variable size 
+In variable type the question will be  find the largest/smallest window subjected to a condition.
+
