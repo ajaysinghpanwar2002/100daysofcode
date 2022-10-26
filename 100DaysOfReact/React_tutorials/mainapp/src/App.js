@@ -1,13 +1,13 @@
 import React from 'react'
-// import Greeting from './components/Greeting'
-import Message from './components/Message'
+import Counter from './components/Counter'
+import Counter2 from './components/Counter2'
+import Counter3 from './components/Counter3'
 export default function App() {
   return (
     <>
-    {/* <Greeting name="ayush"/>
-    <Greeting name="divya"/>
-    <Greeting name="ajay"/> */}
-    <Message/>
+    <Counter/>
+    <Counter2/>
+    <Counter3/>
     </>
   )
 }
