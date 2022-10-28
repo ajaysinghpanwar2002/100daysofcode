@@ -13,7 +13,6 @@ bool isPrime(int n)
 	for (int i = 2; i <= sqrt(n); i++)
 		if (n % i == 0)
 			return false;
-
 	return true;
 }
 
@@ -24,5 +23,3 @@ int main()
 	isPrime(15) ? cout << " true\n" : cout << " false\n";
 	return 0;
 }
-
-// This code is contributed by Vikash Sangai
