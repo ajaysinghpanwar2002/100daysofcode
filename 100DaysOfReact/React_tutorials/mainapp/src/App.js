@@ -6,7 +6,9 @@ import React from 'react'
 // import Jobinfo from './components/Jobinfo'
 // import Ternary from './components/Ternary'
 // import Lists from './components/Lists'
-import Planets from './components/Planets'
+// import State from './hooks/State'
+// import Planets from './components/Planets'
+// import Counter5 from './components/Counter5'
 export default function App() {
   return (
     <>
@@ -17,7 +19,9 @@ export default function App() {
       {/* <Jobinfo salary={900} position="senior sde" company="amazon" /> */}
       {/* <Ternary/> */}
       {/* <Lists/> */}
-      <Planets/>
+      {/* <Planets/> */}
+      {/* <State/> */}
+      {/* <Counter5/> */}
     </>
   )
 }
