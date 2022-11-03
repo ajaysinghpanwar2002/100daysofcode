@@ -9,6 +9,7 @@ import React from 'react'
 // import State from './hooks/State'
 // import Planets from './components/Planets'
 // import Counter5 from './components/Counter5'
+import Crud from './crud/Crud'
 export default function App() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function App() {
       {/* <Planets/> */}
       {/* <State/> */}
       {/* <Counter5/> */}
+      <Crud/>
     </>
   )
 }
