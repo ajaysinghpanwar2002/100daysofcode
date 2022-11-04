@@ -11,7 +11,9 @@ import React from 'react'
 // import Counter5 from './components/Counter5'
 // import Crud from './crud/Crud'
 // import Effect from './hooks/Effect'
-import Api from './Api'
+// import Api from './Api'
+// import PredictAge from './components/PredictAge'
+import Excuses from './components/Excuses'
 export default function App() {
   return (
     <>
@@ -27,7 +29,9 @@ export default function App() {
       {/* <Counter5/> */}
       {/* <Crud/> */}
       {/* <Effect/> */}
-      <Api/>
+      {/* <Api/> */}
+      {/* <PredictAge/> */}
+      <Excuses />
     </>
   )
 }
