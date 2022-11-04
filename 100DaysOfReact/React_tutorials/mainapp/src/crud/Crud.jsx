@@ -15,15 +15,7 @@ function Crud() {
         setTodoList(newTodoList);
     }
     const deleteTask = (taskName) => {
-        const newTodoList = todolist.filter((task) => {
-            if (task === taskName) {
-                return false;
-            }
-            else {
-                return true;
-            }
-        });
-        setTodoList(newTodoList);
+        setTodoList(todolist.filter((task) => task !== taskName));
     }
     return (
         <>
@@ -38,7 +30,7 @@ function Crud() {
                         return (
                             <div>
                                 <h1>{task}</h1>
-                                <button onClick={deleteTask(task)}>X</button>
+                                <button onClick={() => deleteTask(task)}>X</button>
                             </div>
                         )
                     })}
