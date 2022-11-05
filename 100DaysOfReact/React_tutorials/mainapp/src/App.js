@@ -13,7 +13,8 @@ import React from 'react'
 // import Effect from './hooks/Effect'
 // import Api from './Api'
 // import PredictAge from './components/PredictAge'
-import Excuses from './components/Excuses'
+// import Excuses from './components/Excuses'
+import Nationalize from './components/Nationalize'
 export default function App() {
   return (
     <>
@@ -31,7 +32,8 @@ export default function App() {
       {/* <Effect/> */}
       {/* <Api/> */}
       {/* <PredictAge/> */}
-      <Excuses />
+      {/* <Excuses /> */}
+      <Nationalize/>
     </>
   )
 }
