@@ -1,8 +1,12 @@
 import React from 'react'
+import { testContext } from '../testContext';
+
+
 
 function Home() {
+  const c = React.useContext(testContext);
   return (
-    <div>Home</div>
+    <div>Home {c}</div>
   )
 }
 

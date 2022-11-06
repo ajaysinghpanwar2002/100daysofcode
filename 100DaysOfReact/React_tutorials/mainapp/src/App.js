@@ -19,15 +19,19 @@ import Home from "../src/pages/Home"
 import PredictAge from './components/PredictAge'
 import Excuses from './components/Excuses'
 import Nationalize from './components/Nationalize'
+import Form from './components/Form';
+import { testContext } from './testContext';
 export default function App() {
+  
   return (
-    <>
+    <testContext.Provider value={"testContextsss"}>
       <Router>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/nationality' element={<Nationalize/>} />
-          <Route path='/excuses' element={<Excuses/>} />
-          <Route path='/age' element={<PredictAge/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/nationality' element={<Nationalize />} />
+          <Route path='/excuses' element={<Excuses />} />
+          <Route path='/age' element={<PredictAge />} />
+          <Route path='/form' element={<Form />} />
         </Routes>
       </Router>
       {/* <Counter /> */}
@@ -46,6 +50,6 @@ export default function App() {
       {/* <PredictAge/> */}
       {/* <Excuses /> */}
       {/* <Nationalize/> */}
-    </>
+    </testContext.Provider>
   )
 }
