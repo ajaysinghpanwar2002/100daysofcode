@@ -1,0 +1,29 @@
+ill show how we use it 
+
+1) install @tanstack/react-query
+2) import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+3) const client = new QueryClient(), before return function
+4) wrap your application in which you want to use it 
+
+<QueryClientProvider client={client}>
+your app
+</QueryClientProvider>
+
+5) now if you want to use in any page 
+
+1) import {useQuery} from "@tanstack/react-query"
+2)   const {data: catdata, isLoading,isError,refetch} = useQuery(["cat"],()=>{
+    Axios.get("https://catfact.ninja/fact").then((res)=>res.data);
+  })
+
+  if(isLoading){
+    return(
+      <h1>Loading</h1>
+    )
+  }
+  if(isError){
+    return(
+      <h1>Sorry we were down </h1>
+    )
+  }
+

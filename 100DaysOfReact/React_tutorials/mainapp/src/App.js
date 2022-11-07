@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 // Pages
 import Home from "../src/pages/Home"
 // import Counter from './components/Counter'
@@ -21,19 +22,24 @@ import Excuses from './components/Excuses'
 import Nationalize from './components/Nationalize'
 import Form from './components/Form';
 import { testContext } from './testContext';
+import { Person } from './typescript/Person';
 export default function App() {
-  
+  const client = new QueryClient()
   return (
     <testContext.Provider value={"testContextsss"}>
-      <Router>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/nationality' element={<Nationalize />} />
-          <Route path='/excuses' element={<Excuses />} />
-          <Route path='/age' element={<PredictAge />} />
-          <Route path='/form' element={<Form />} />
-        </Routes>
-      </Router>
+      <QueryClientProvider client={client}>
+
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/nationality' element={<Nationalize />} />
+            <Route path='/excuses' element={<Excuses />} />
+            <Route path='/age' element={<PredictAge />} />
+            <Route path='/form' element={<Form />} />
+            <Route path = '/person' element={<Person/>}/>
+          </Routes>
+        </Router>
+      </QueryClientProvider>
       {/* <Counter /> */}
       {/* <Counter2 /> */}
       {/* <Counter3 /> */}
@@ -50,6 +56,7 @@ export default function App() {
       {/* <PredictAge/> */}
       {/* <Excuses /> */}
       {/* <Nationalize/> */}
+
     </testContext.Provider>
   )
 }
