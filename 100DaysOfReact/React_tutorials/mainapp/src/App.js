@@ -22,7 +22,7 @@ import Excuses from './components/Excuses'
 import Nationalize from './components/Nationalize'
 import Form from './components/Form';
 import { testContext } from './testContext';
-import { Person } from './typescript/Person';
+import Person  from './typescript/Person';
 export default function App() {
   const client = new QueryClient()
   return (
@@ -36,7 +36,14 @@ export default function App() {
             <Route path='/excuses' element={<Excuses />} />
             <Route path='/age' element={<PredictAge />} />
             <Route path='/form' element={<Form />} />
-            <Route path = '/person' element={<Person/>}/>
+            <Route path = '/person' element={<Person
+            name= 'ajay'
+            email = 'ajaysingh@gmail.com'
+            age = {20}
+            isMarried={false}
+            friends = {["ankit","dips","vikram"]}
+            
+            />}/>
           </Routes>
         </Router>
       </QueryClientProvider>
