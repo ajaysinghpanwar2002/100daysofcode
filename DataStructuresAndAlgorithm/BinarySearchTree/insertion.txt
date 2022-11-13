@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std; 
+
+struct Node {
+    int data;
+    Node *right , *left;
+
+    Node(int val)
+    {
+        data = val;
+        right = NULL;
+        left = NULL;
+    } 
+};
+int main(){
+
+    return 0;
+}
