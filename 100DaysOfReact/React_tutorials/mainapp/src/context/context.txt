@@ -1,0 +1,17 @@
+// app js file
+
+import {createContext} from "react"
+
+export const ThemeContext = createContext(null);
+
+const [theme,setTheme] = useState("light");
+
+const toggleTheme = () => {
+    setTheme((curr)=>(curr === "light" ? "dark" : "light"));
+}
+
+<ThemeContext.provider value={{theme,toggleTheme}}>
+    <div className= "app" id={theme}>
+        <application/>
+    </div>
+</ThemeContext.provider>
